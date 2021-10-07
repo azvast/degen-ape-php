@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16_1/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16_1/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16_1/favicon-16x16.png"/>
-    <meta name="description" content="Lorem Ipsum."/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16_1/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16_1/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16_1/favicon-16x16.png" />
+    <meta name="description" content="Lorem Ipsum." />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Degenerate Ape Academy</title>
     <link href="static/css/style.css" rel="stylesheet">
@@ -14,57 +15,51 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <img src="./static/media/logo.png">
-        <div class="connect-button">
-            <a href="#">Connect Wallet</a>
+        <div class="header">
+            <a href="#">
+                <img src="./static/media/logo.png">
+            </a>
+            <ul class="nav">
+                <li>
+                    <a href="#container" class="nav-item">About</a>
+                </li>
+                <li>
+                    <a href="#utility" class="nav-item">Utility & Roadmap</a>
+                </li>
+                <li>
+                    <a href="#rarity" class="nav-item">Rarity</a>
+                </li>
+                <li>
+                    <a href="#faq" class="nav-item">Faq</a>
+                </li>
+                <li>
+                    <a href="#team" class="nav-item">Team</a>
+                </li>
+            </ul>
+            <div class="connect-button" onclick="connectWallet(event)">
+                Connect Wallet
+            </div>
         </div>
-        <a href="#" class="hamburger"></a>
-
-        <nav class="navuni">
-            <div class="col-lef">
-                 
-            </div>
-            <div class="col-mid">
-                <img src="./favicon_package_v0.16_1/apple-touch-icon.png">
-            </div>
-            <div class="menu">
-               <div class="menu-buton">
-                   <a href="#">Connect Wallet</a>
-               </div>
-                   <hr class="hr">
-               <div class="my-apes" style="opacity: 1; cursor: pointer; transform: none;">
-                   <a href="#">My Apes
-                   <div>Coming Soon</div>
-                   <div>Apes can be seen from phantom now</div>
-                   </a>
-                </div>
-                <hr class="hr">
-                <ul class="menu-ul">
-                    <li><a href="#about" class="menu-item" >About</a></li>
-                    <li><a class="menu-item" href="#utility">Utility & Roadmap</a></li>
-                    <li><a class="menu-item" href="#rarity">Rarity</a></li>
-                    <li><a href="#" class="menu-item">Academy Traits</a></li>
-                    <li><a class="menu-item box bounce-5" href="#faq">Faq</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
     <div class="main-body">
-            <div class="row showcase">
-                <div class="container">
-                    <div class="col-md-12 top text-center">
-                        <video autoplay loop muted playsinline style="max-width: 100%; padding-top: 100px;">
-                            <source src="static/media/mint_machine.webm" type="video/webm">
-                        </video>
-                    </div>
-                    <div class="col-md-12 sec">
-                        <img src="static/media/down.png">
-                    </div>
+        <div class="row showcase">
+            <div class="container">
+                <div class="col-md-12 top text-center">
+                    <video muted playsinline id="mint_video">
+                        <source src="static/media/mint_machine.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="col-md-12 sec">
+                    <a href="#container">
+                        <span></span>
+                    </a>
                 </div>
             </div>
-            <div class="container">
+        </div>
+        <div class="container" id="container">
             <div class="row">
                 <div class="hp-content" id="about" data-aos="fade-up">
                     <div class="hp-about">
@@ -72,7 +67,8 @@
                             <div class="hp-a-content">
                                 <h1>Welcome!</h1>
                                 <p>Our mission here at the academy is simple: Take 10,000 of the smoothest brained apes, put them all in one location and let the mayhem ensue.</p>
-                                <p>The academy was founded on the principles of friendship making, crayon eating and absolute, unregulated, deplorable, degenerate behaviour. Welcome fellow apes, to the <b>Degenerate Ape Academy</b>.</p>
+                                <p>The academy was founded on the principles of friendship making, crayon eating and absolute, unregulated, deplorable, degenerate behaviour. Welcome fellow apes, to the
+                                    <b>Degenerate Ape Academy</b>.</p>
                                 <h1 class="sub-head">Enrollment Fee: 6◎</h1>
                                 <p>Maximum student number: 10,000</p>
                             </div>
@@ -80,7 +76,7 @@
                         <div class="hp-column-sec col-lg-4 col-md-12 left">
                             <img src="static/media/23.png">
                         </div>
-                        
+
                     </div>
                 </div>
                 <div>
@@ -96,20 +92,37 @@
                         <div class="slide"><img src="static/media/10.png"></div>
                     </section>
                 </div>
-                <div class="hp-content third-sec" id="utility" data-aos="fade-up">
-                    <div class="hp-about">
-                        <div class="col-md-9 left">
-                            <div class="hp-rm-content"><h1>Utility &amp; Roadmap</h1><p>Minting a Degenerate Ape acts as your enrollment to the most prestigious Academy apes have ever built. While you’re a student, you will have access to all that the academy has to offer currently, and in the future.</p><p>Access to the academy means more than just bragging rights to those uneducated, less sophisticated apes. We have made it our goal to make sure utility is always offered to all our students. This utility will be modest at first but will expand over time as we continue to build.</p><p>We are building the academy not just for you, but also with you. Click below to see our roadmap for the near and longer term future.</p><p>We hope you have your crayons ready.</p><button class="primary-button hp-trello-btn">Visit Roadmap</button></div>
-                        </div>
-                        <div class="col-md-3 right">
-                            <img src="static/media/21.png">
+                <div id="utility">
+                    <div class="hp-content third-sec" data-aos="fade-up">
+                        <div class="hp-about">
+                            <div class="col-md-9 left">
+                                <div class="hp-rm-content">
+                                    <h1>Utility &amp; Roadmap</h1>
+                                    <p>Minting a Degenerate Ape acts as your enrollment to the most prestigious Academy apes have ever built. While you’re a student, you will have access to all that the academy has to offer currently, and in the future.</p>
+                                    <p>Access to the academy means more than just bragging rights to those uneducated, less sophisticated apes. We have made it our goal to make sure utility is always offered to all our students. This utility will be modest
+                                        at first but will expand over time as we continue to build.</p>
+                                    <p>We are building the academy not just for you, but also with you. Click below to see our roadmap for the near and longer term future.</p>
+                                    <p>We hope you have your crayons ready.</p><button class="primary-button hp-trello-btn">Visit Roadmap</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3 right">
+                                <img src="static/media/21.png">
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="divider"></div>
-                <div class="fourth-sec" id="rarity" data-aos="zoom-in">
+                <div class="divider" id="rarity"></div>
+                <div class="fourth-sec" data-aos="zoom-in">
                     <div class="col-md-6 left">
-                        <div class="hp-trait-content"><h1>Trait Rarity</h1><p>All apes are equal, but some apes are more equal than others. That’s why we’ve established a trait rarity system to tell which of our students are likely destined for greatness.</p><p>There are 137 total traits in the academy and these have been categorized into a tier based system (seen on the right). Traits are ranked from ‘common’ all the way through to ‘mythic’ and each rank has a corresponding % chance of being minted. All of the Academy’s traits and their rarity % can be viewed over in our ‘traits’ section. Click below to check them out.</p><button class="primary-button hp-trait-btn">View Traits</button></div>
+                        <div class="hp-trait-content">
+                            <h1>Trait Rarity</h1>
+                            <p>All apes are equal, but some apes are more equal than others. That’s why we’ve established a trait rarity system to tell which of our students are likely destined for greatness.
+                            </p>
+                            <p>There are 137 total traits in the academy and these have been categorized into a tier based system (seen on the right). Traits are ranked from ‘common’ all the way through to ‘mythic’ and each rank has a corresponding % chance
+                                of being minted. All of the Academy’s traits and their rarity % can be viewed over in our ‘traits’ section. Click below to check them out.</p><button class="primary-button hp-trait-btn">View
+                                Traits</button>
+                        </div>
                     </div>
                     <div class="col-md-6 left levels">
                         <div class="hp-trait-levels">
@@ -131,56 +144,68 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="divider"></div>
-                <div class="accordion accordion-flush" id="fqa" id="accordionFlushExample">
-                    <div id="faqs" class="hp-faqs" data-aos="zoom-out"><h1>Faq<span>'</span><sup style="text-transform: lowercase;">s</sup> </h1>
+                <div class="accordion accordion-flush" id="faq" id="accordionFlushExample">
+                    <div id="faqs" class="hp-faqs" data-aos="zoom-out">
+                        <h1>Faq<span>'</span><sup style="text-transform: lowercase;">s</sup> </h1>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Lorem ipsum dolor
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-                      </div>
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Lorem ipsum dolor
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                        </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Lorem ipsum dolor
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-                      </div>
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Lorem ipsum dolor
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                        </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Lorem ipsum dolor
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-                      </div>
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Lorem ipsum dolor
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="fifth-sec hp-team" >
-                    <div class="hp-faqs" data-aos="zoom-out"><h1>TEAM</h1>
+                </div>
+                <div class="fifth-sec hp-team" id="team">
+                    <div class="hp-faqs" data-aos="zoom-out">
+                        <h1>TEAM</h1>
                     </div>
                     <div class="hp-team-list">
                         <div class="hp-tm">
                             <img src="static/media/11.png">
-                            <div class="hp-tm-l"><h2>@MONOLIFF</h2><p>Art &amp; Design</p></div>
+                            <div class="hp-tm-l">
+                                <h2>@MONOLIFF</h2>
+                                <p>Art &amp; Design</p>
+                            </div>
                         </div>
                         <div class="hp-tm">
                             <img src="static/media/12.png">
-                            <div class="hp-tm-l"><h2>@OBOTTIS1</h2><p>Project Management</p></div>
+                            <div class="hp-tm-l">
+                                <h2>@OBOTTIS1</h2>
+                                <p>Project Management</p>
+                            </div>
                         </div>
                         <div class="hp-tm">
                             <img src="static/media/13.png">
-                            <div class="hp-tm-l"><h2>@CONORHOLDS</h2><p>Development</p></div>
+                            <div class="hp-tm-l">
+                                <h2>@CONORHOLDS</h2>
+                                <p>Development</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -194,41 +219,38 @@
         </div>
     </footer>
     <script>
-
-
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('.customer-logos')
-        .slick({
-    slidesToShow: 3, // 1024x768
-    autoplay: true,
-                autoplaySpeed: 5500,
-                arrows: false,
-                dots: false,
-                pauseOnHover:false,
-    responsive: [
-        {
-          breakpoint: 769, // 600x800
-          settings: { slidesToShow: 1 }
-        }
-    ]
-});
-});
-    
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-        
-  <script src="./static/js/script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
-  <script>
-      document.onreadystatechange = function () {
-            if (document.readyState == 'complete') 
-            {
+                .slick({
+                    slidesToShow: 3, // 1024x768
+                    autoplay: true,
+                    autoplaySpeed: 5500,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    responsive: [{
+                        breakpoint: 769, // 600x800
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }]
+                });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="./static/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState == 'complete') {
                 AOS.refresh();
             }
-            }
-  </script>
+        }
+    </script>
 </body>
+
 </html>
