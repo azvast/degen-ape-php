@@ -454,6 +454,7 @@ div#navbar {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+    border: 2px solid wheat;
 }
 .hp-about .hp-a-content {
     width: 100%;
